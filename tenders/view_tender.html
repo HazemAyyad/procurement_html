@@ -12,7 +12,7 @@ License: For each use you must have a valid license purchased only from above li
 -->
 <html lang="en">
 	<!--begin::Head-->
-	<head><base href="">
+	<head><base href="../assets">
 		<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel by Keenthemes</title>
 		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -24,16 +24,956 @@ License: For each use you must have a valid license purchased only from above li
 		<meta property="og:url" content="https://keenthemes.com/metronic" />
 		<meta property="og:site_name" content="Keenthemes | Metronic" />
 		<link rel="canonical" href="Https://preview.keenthemes.com/metronic8" />
-		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 		<!--end::Fonts-->
 		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Page Vendor Stylesheets-->
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://www.tendertiger.com/Contentnd/css/font-awesome.min.css?ver=260" rel="stylesheet" type="text/css" />
+		<style>
+			
+.page-header-two {
+    background: #a5233d;
+    height: 250px;
+}
+
+.page-header-two .table>tbody>tr>td {
+    border: 0;
+    padding: 0;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.page-header-two h1 {
+    font-size: 30px;
+    font-family: 'proximanovabold';
+    margin: 15px 0;
+    color: #fff;
+    max-width: 70%;
+}
+
+.bid-here {
+    text-align: right;
+    float: right;
+}
+
+.buttons-section {
+    float: right;
+}
+
+.bid-here i {
+    color: #fff;
+    font-size: 15px;
+}
+
+.bid-here .btn {
+    border: 0;
+    padding: 6px 20px;
+    transition: 0.5s;
+}
+
+.bid-here .btn:focus, .bid-here .btn:hover {
+    background: #ffb741;
+    transition: 0.5s;
+}
+
+.back-btn {
+    float: right;
+    margin-left: 10px;
+}
+
+.back-btn a {
+    background: #591321;
+    color: #faa61d !important;
+    border: 1px solid transparent;
+    font-family: 'proxima_novaregular';
+    padding: 5px 20px 4px;
+}
+
+.back-btn a:hover {
+    background: #681828;
+}
+
+.page-header-two h1 a {
+    color: #fff;
+}
+
+.page-header-two .print-btn {
+    color: #fff;
+    background: #73182a;
+    float: right;
+}
+
+.page-header-two .print-btn i {
+    margin-right: 5px;
+}
+
+.tv-div {
+    margin-top: -100px;
+    margin-bottom: -20px;
+}
+
+.tv-body {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    /*display: table;*/
+    width: 100%;
+    padding-bottom: 30px;
+}
+.view-all-tenders {
+    border-radius: 50px;
+    background: #faa61d;
+    font-size: 14px;
+    color: #ffffff !important;
+    padding: 5px 15px;
+    font-family: 'proxima_novaregular';
+    position: relative;
+    top: -5px;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/*.tv-body-left {
+	padding: 20px;
+	border-right: 1px solid #dcddde;
+	display: table-cell;
+}*/
+
+.tv-body-left {
+    padding: 20px;
+    border-right: 1px solid #dcddde;
+    display: table-cell;
+    width: 80%;
+}
+
+.tv-body-left p {
+    text-align: justify;
+}
+
+.tv-slide-btn a.right, .tv-slide-btn a.left {
+    position: fixed;
+    top: 50%;
+    width: 30px;
+    background: #a5233d;
+    color: #fff;
+    font-size: 30px;
+    height: 100px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.tv-slide-btn a.left {
+    left: 15px;
+    border-radius: 4px;
+}
+
+.tv-slide-btn a.right {
+    right: 15px;
+    border-radius: 4px;
+}
+
+.tv-slide-btn a.left i.fa, .tv-slide-btn a.right i.fa {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+}
+
+.tv-slide-btn a.left i.fa {
+    left: 9px;
+}
+
+.tv-slide-btn a.right i.fa {
+    left: 11px;
+}
+
+.tv-slide-btn a.disabled {
+    opacity: 0.5;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px !important;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.view-numbers-details>tbody>tr>td {
+    border: 0;
+    padding: 8px 0 8px 5px !important;
+}
+
+.view-numbers-details img {
+    max-width: 100%;
+}
+
+.view-numbers-details>tbody>tr:first-child>td {
+    /*padding-right: 140px;*/
+    position: relative;
+}
+
+.view-numbers-details b {
+    color: #a5233d;
+    font-weight: normal;
+}
+
+.view-numbers-details b.td-title {
+    white-space: nowrap;
+}
+
+.compare-anals-compi {
+    margin: 15px auto;
+    min-height: 500px;
+}
+
+.compare-anals-compi table {
+    background: #fff;
+}
+
+.nocom-added {
+    font-size: 15px;
+    color: #888;
+    display: block;
+    padding-left: 5px;
+}
+
+.view-numbers-details span {
+    color: #a5233d;
+    padding-right: 20px;
+    position: relative;
+}
+
+.view-numbers-details tr td label {
+    font-weight: normal;
+    padding-right: 5px;
+}
+
+.view-numbers-details tr.word-highlight {
+    color: #6d6e71;
+    transition: 0.5s;
+}
+
+.view-numbers-details tr.word-highlight:hover {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    background: #fff;
+    transform: scale(1.01);
+}
+
+.view-numbers-details tr.word-highlight i.highlighted-word {
+    color: #000000;
+    font-style: normal;
+}
+
+.view-numbers-details span i {
+    font-style: normal;
+    color: #414042;
+}
+
+.view-numbers-details span:before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background: #9c9c9e;
+    left: -13px;
+    top: 5px;
+}
+
+.view-numbers-details tr:first-child td span:last-child {
+    padding-right: 0;
+}
+
+.view-numbers-details tr:first-child td span:first-child:before {
+    display: none;
+}
+
+/*.view-documents {
+	margin-top:30px;
+}*/
+
+.view-documents .title {
+    margin-top: 0 !important;
+    color: #414042 !important;
+}
+
+.view-documents li {
+    display: inline-block;
+    padding-left: 33px;
+    position: relative;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+.view-documents li:last-child {
+    padding-right: 0;
+}
+
+.view-documents li i {
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.view-documents li i.fa {
+    font-size: 22px;
+    color: #7e8591;
+}
+
+.view-documents li a {
+    color: #414042;
+}
+
+.view-documents li i img {
+    width: 23px !important;
+    height: 23px;
+}
+
+.view-documents li p {
+    margin-bottom: 0;
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+.view-documents li span {
+    color: #a7a9ac;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.download-all {
+    text-transform: capitalize;
+    padding: 1px 8px 0;
+    border-radius: 20px;
+    float: right;
+    font-size: 14px;
+}
+
+.all-download {
+    padding-left: 45px;
+    position: relative;
+    top: 26px;
+    left: 30px;
+}
+
+.all-download p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.all-download a {
+    color: #414042;
+}
+
+.all-download span {
+    color: #a7a9ac;
+    font-size: 12px;
+}
+
+.all-download i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 30px;
+    color: #a5233d;
+}
+
+.tv-body-left .panel-heading {
+    padding: 0;
+}
+
+.tv-body-left .panel-heading a, .tv-body-left .panel-heading a:hover {
+    padding: 13px 20px 11px;
+    display: block;
+    font-size: 15px;
+    font-family: 'proxima_novaregular';
+    color: #414042;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tv-body-left .panel-heading.active a {
+    background: #a5233d;
+    color: #fff;
+}
+
+.tv-body-left .panel-heading a b {
+    float: right;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.tv-body-left .panel-heading a span {
+    font-family: 'proximanovabold';
+    text-transform: uppercase;
+}
+
+.tv-body-left .panel-group .panel-heading+.panel-collapse>.list-group, .tv-body-left .panel-group .panel-heading+.panel-collapse>.panel-body {
+    background: #ededee;
+    border: 0;
+    padding: 10px 35px 25px;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+
+.tv-body-left .panel-group {
+    margin: 0;
+}
+
+.tv-body-left .panel {
+    border: 0;
+    margin-bottom: 13px;
+    box-shadow: none;
+}
+
+.more-less {
+    float: right;
+    border: 1px solid #414042;
+    border-radius: 100%;
+    padding: 4px 6px;
+    height: 22px;
+    width: 22px;
+    color: #414042;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.tv-body-left .panel-heading.active a i.more-less {
+    border-color: #fff;
+    color: #fff;
+}
+
+.tv-body-left .panel-heading a i.fa-file-text {
+    margin-left: 5px;
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+}
+.fade.in {
+    opacity: 1;
+}
+.tv-body .title {
+    margin: 20px 0 5px;
+    color: #a5233d;
+    font-family: 'proxima_novaregular';
+}
+
+.tv-body .add-hastag {
+    color: #414042;
+}
+
+.tv-body .title .fa-map-marker {
+    font-size: 17px;
+}
+
+.depa-title {
+    margin: 0 0 10px;
+    font-family: 'proximanovabold';
+    overflow: hidden;
+    font-size: 17px;
+    text-align: right;
+}
+
+.depa-title b {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.tv-body .sub-title {
+    margin-bottom: 30px;
+}
+
+.tv-body .sub-title span {
+    color: #a5233d;
+}
+
+.corri-available {
+    border-radius: 20px;
+    color: #faa61d !important;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold !important;
+    white-space: nowrap;
+    border: 1px solid #faa61d;
+}
+
+/*.corri-available:hover {
+	background:#a5233d;
+	transition:0.5s;
+}*/
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.viewT-Tab>li.active>a:focus, .viewT-Tab>li.active>a:hover {
+    color: #000 !important;
+}
+.dash-tab .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #a5233d;
+    border: 1px solid #ddd;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.corrigendum-body {
+    padding: 20px 40px 40px;
+}
+
+.corri-left {
+    overflow: hidden;
+    width: auto;
+    padding-right: 210px;
+}
+
+.corri-right {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+
+a.subscribers {
+    color: #414042;
+    text-decoration: underline;
+}
+
+.tv-body-right {
+    width: 320px;
+    padding: 0 20px 20px;
+    vertical-align: top;
+    display: table-cell;
+}
+
+.tv-body-right .title {
+    color: #a5233d;
+    font-size: 20px;
+}
+
+.tv-body-right .sub-title {
+    color: #969696;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.tv-body-right h3 {
+    margin: 0;
+    font-family: 'proxima_novaregular';
+}
+
+.tv-body-right p {
+    font-family: 'proxima_novaregular';
+}
+
+.tv-body-right .closing-date {
+	margin: 0 0 0 5px;
+	/*position: relative;
+	top: -8px;
+	left: 10px;
+	display:inline;*/
+}
+
+.tv-body-right .separator {
+    width: 320px;
+    margin: 20px -20px;
+}
+
+.tv-body-left-tabs {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.tv-body-left-tabs .tab-content {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.tv-body-left-tabs .nav-tabs li a {
+    background: #e6e7e8;
+    color: #414042;
+    font-family: 'proxima_novaregular';
+    padding: 10px 20px;
+    border-top: 3px solid transparent;
+    border-bottom: 1px solid #e6e7e8;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.tv-body-left-tabs .nav-tabs>li.active>a, .tv-body-left-tabs .nav-tabs>li.active>a:focus, .tv-body-left-tabs .nav-tabs>li.active>a:hover {
+    background: #fff;
+    border-top: 3px solid #a5233d;
+    border-bottom: 1px solid #fff;
+}
+
+.tv-body-left-tabs .nav-tabs li a b {
+    background: #7e8591;
+    border-radius: 5px;
+    padding: 1px 4px 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.tv-body-left-tabs .nav-tabs li.active a b {
+    background: #faa61d;
+}
+
+.tv-body-left-tabs .nav-tabs li a i {
+    font-size: 18px;
+    color: #bcbcbc;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+.social-box {
+    position: absolute;
+    right: 8px;
+    top: 55px;
+}
+
+.social-box li {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.social-box li.view {
+    padding-right: 17px;
+}
+
+.social-box li span.count {
+    background: #681828;
+    padding: 1px 4px;
+    border-radius: 5px;
+    border-radius: 5px;
+    color: #faa61d;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    top: -2px;
+    float: right;
+    left: 5px;
+    font-family: 'pt_sansregular';
+}
+
+.social-box li a i.eye-icon {
+    background: url(https://www.tendertiger.com/Contentnd/images/eye-visible-three.svg);
+    height: 17px;
+    width: 26px;
+    display: inline-block;
+}
+
+.social-box li a.active i.eye-icon {
+    position: relative;
+    top: 9px;
+    background: url(https://www.tendertiger.com/Contentnd//images/eye-visible-three-orange.svg);
+    height: 17px;
+    width: 26px;
+    display: block;
+}
+
+.social-box li a.active .fa {
+    /*color: #a5233d;*/
+    color: #faa61d;
+}
+
+.social-box li.tag-friend a i+.tooltip>.tooltip-inner {
+    padding: 10px 15px;
+    width: 150px;
+    max-width: 150px;
+    position: relative;
+    margin-right: 10px;
+    z-index: 999;
+}
+
+.social-box li a {
+    margin-left: 8px;
+}
+
+.social-box li a .fa {
+    font-size: 22px;
+    color: #fff;
+}
+.sharelinks {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    padding: 20px 0;
+    display: none;
+    width: 210px;
+    z-index: 999;
+    font-family: 'pt_sansregular';
+}
+
+.sharelinks ul {
+    background: #fff;
+    box-shadow: 0 -1px 20px 0 rgba(0, 0, 0, 0.15);
+    /* height: 180px; */
+    padding: 13px 0;
+}
+
+/* Whatsapp icon color */
+
+i.fa.fa-whatsapp {
+    color: #2ab200 !important;
+}
+
+a.whatsapp.ui-link:hover {
+    color: #2ab200 !important;
+}
+
+.whatsapp:hover span {
+    color: #2ab200 !important;
+}
+
+/* .tg-frnd-hashtag .share-li:hover .sharelinks {
+	display: block;
+} */
+
+/** sharepop start **/
+
+.sharepopup, .sharepopup ul, .sharepopup li {
+    display: inline-block;
+    list-style: none;
+}
+
+.sharepopup ul li a {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.fa-facebook-official {
+    color: #3b5998;
+}
+
+.fa-twitter-square {
+    color: #00acee;
+}
+
+.fa-google-plus-square {
+    color: #db4a39;
+}
+
+.fa-linkedin-square {
+    color: #0077b5;
+}
+
+/** sharepop End **/
+
+.sharelinks:after {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    content: "";
+    position: absolute;
+    right: 48px;
+    top: 14px;
+}
+
+.social-box li.share-li:hover .sharelinks {
+    display: block;
+}
+
+.sharelinks li {
+    display: block;
+    padding: 8px 17px;
+    white-space: normal;
+    width: 100%;
+    text-align: left;
+}
+
+.sharelinks li a {
+    padding: 0;
+    color: #414042;
+    font-size: 14px;
+}
+
+.sharelinks li a span {
+    padding: 0px !important;
+}
+
+.sharelinks li a span:before {
+    content: none !important;
+}
+
+.sharelinks li a .fa {
+    margin-right: 15px;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.sharelinks li a .fa-facebook-official, .sharelinks li a.facebook:hover span {
+    color: #3b5998;
+}
+
+.sharelinks li a .fa-twitter-square, .sharelinks li a.twitter:hover span {
+    color: #00acee;
+}
+
+.sharelinks li a .fa-google-plus-square, .sharelinks li a.googleplus:hover span {
+    color: #db4a39;
+}
+
+.sharelinks li a .fa-linkedin-square, .sharelinks li a.linkedin:hover span {
+    color: #0077b5;
+}
+.btn {
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    margin-bottom: 0 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.42857143 !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+    -ms-touch-action: manipulation !important;
+    touch-action: manipulation !important;
+    cursor: pointer !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important; 
+    user-select: none !important;
+    background-image: none !important;
+    border: 1px solid transparent !important;
+    border-radius: 17px !important;
+}
+button, .btn {
+    font-family: 'proximanovabold';
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 5px 20px !important;
+    outline: none !important;
+}
+.btn-default {
+    color: #414042;
+}
+.btn-default {
+    background: #fff !important;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tender-result-count {
+    font-size: 19px;
+    background: #faa61d;
+    border-radius: 5px;
+    margin-top: 33px;
+    line-height: 22px;
+    text-align: center;
+    font-family: 'proxima_novaregular';
+    padding-top: 5px;
+}
+
+.tender-result-count img {
+    width: auto !important;
+    text-align: center;
+    display: inline !important;
+    padding-bottom: 10px;
+}
+
+.tender-result-count a {
+    padding: 8px 15px;
+    display: block;
+    color: #fff;
+}
+
+.tender-result-count b {
+    display: block;
+    font-family: 'proximanovabold';
+    font-size: 22px;
+    padding-bottom: 2px;
+}
+
+.bidderchart-popup .modal-dialog {
+    width: 100%;
+    max-width: 1200px;
+}
+.tv-body-right .separator {
+    width: 320px;
+    margin: 20px -20px;
+}
+.separator {
+    height: 1px;
+    width: 100%;
+    margin: 20px auto;
+    background: #dcddde;
+}
+a {
+    color: #a5233d;
+}
+.clear {
+    clear: both;
+}
+.list-bidder-div {
+    margin-top: 10px;
+}
+.list-bidder-div .bidder-title {
+    text-align: center;
+    padding: 10px;
+    background: #a5233d;
+    color: #fff;
+}
+.table {
+    margin-bottom: 0;
+}
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 1px solid #ddd;
+}
+		</style>
 		<!--end::Global Stylesheets Bundle-->
 	</head>
 	<!--end::Head-->
@@ -50,7 +990,7 @@ License: For each use you must have a valid license purchased only from above li
 					<div class="aside-logo flex-column-auto" id="kt_aside_logo">
 						<!--begin::Logo-->
 						<a href="/index.html">
-							<img alt="Logo" src="assets/media/logo-1-dark.png" class="h-40px logo" />
+							<img alt="Logo" src="../assets/media/logo-1-dark.png" class="h-40px logo" />
 						</a>
 						<!--end::Logo-->
 						<!--begin::Aside toggler-->
@@ -201,6 +1141,7 @@ License: For each use you must have a valid license purchased only from above li
 										<span class="menu-title">Requests</span>
 									</a>
 								</div>
+								
 								<div data-kt-menu-trigger="click" class="menu-item here menu-accordion">
 									<!--begin:Menu link-->
 									<span class="menu-link">
@@ -223,7 +1164,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link active" href="../tenders/pending_tenders.html">
+											<a class="menu-link " href="../tenders/pending_tenders.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -238,7 +1179,7 @@ License: For each use you must have a valid license purchased only from above li
 											   <!--begin:Menu item-->
 										<div class="menu-item">
 											<!--begin:Menu link-->
-											<a class="menu-link " href="../tenders/active_tenders.html">
+											<a class="menu-link active" href="../tenders/active_tenders.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -266,6 +1207,22 @@ License: For each use you must have a valid license purchased only from above li
 										</div>
 										<!--end:Menu sub-->
 									</div>
+								
+								<div class="menu-item">
+									<a class="menu-link active" href="projects.html">
+										<span class="menu-icon">
+											<!--begin::Svg Icon | path: icons/duotone/Design/PenAndRuller.svg-->
+											<span class="svg-icon svg-icon-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+													<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
+													<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</span>
+										<span class="menu-title">Projects</span>
+									</a>
+								</div>
 								<div class="menu-item">
 									<a class="menu-link active" href="template_triggers.html">
 										<span class="menu-icon">
@@ -356,7 +1313,7 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Mobile logo-->
 							<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
 								<a href="../../demo1/dist/index.html" class="d-lg-none">
-									<img alt="Logo" src="assets/media/logos/logo-3.svg" class="h-30px" />
+									<img alt="Logo" src="../assets/media/logos/logo-3.svg" class="h-30px" />
 								</a>
 							</div>
 							<!--end::Mobile logo-->
@@ -385,11 +1342,12 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Toolbar wrapper-->
 									<div class="d-flex align-items-stretch flex-shrink-0">
 										
+										
 										<!--begin::User-->
 										<div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
 											<!--begin::Menu wrapper-->
 											<div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
-												<img src="assets/media/avatars/150-26.jpg" alt="metronic" />
+												<img src="../assets/media/avatars/150-26.jpg" alt="metronic" />
 											</div>
 											<!--begin::Menu-->
 											<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
@@ -398,7 +1356,7 @@ License: For each use you must have a valid license purchased only from above li
 													<div class="menu-content d-flex align-items-center px-3">
 														<!--begin::Avatar-->
 														<div class="symbol symbol-50px me-5">
-															<img alt="Logo" src="assets/media/avatars/150-26.jpg" />
+															<img alt="Logo" src="../assets/media/avatars/150-26.jpg" />
 														</div>
 														<!--end::Avatar-->
 														<!--begin::Username-->
@@ -488,7 +1446,7 @@ License: For each use you must have a valid license purchased only from above li
 													<a href="#" class="menu-link px-5">
 														<span class="menu-title position-relative">Language
 														<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-														<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="metronic" /></span></span>
+														<img class="w-15px h-15px rounded-1 ms-2" src="../assets/media/flags/united-states.svg" alt="metronic" /></span></span>
 													</a>
 													<!--begin::Menu sub-->
 													<div class="menu-sub menu-sub-dropdown w-175px py-4">
@@ -496,7 +1454,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="menu-item px-3">
 															<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5 active">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/united-states.svg" alt="metronic" />
+																<img class="rounded-1" src="../assets/media/flags/united-states.svg" alt="metronic" />
 															</span>English</a>
 														</div>
 														<!--end::Menu item-->
@@ -504,7 +1462,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="menu-item px-3">
 															<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/spain.svg" alt="metronic" />
+																<img class="rounded-1" src="../assets/media/flags/spain.svg" alt="metronic" />
 															</span>Spanish</a>
 														</div>
 														<!--end::Menu item-->
@@ -512,7 +1470,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="menu-item px-3">
 															<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/germany.svg" alt="metronic" />
+																<img class="rounded-1" src="../assets/media/flags/germany.svg" alt="metronic" />
 															</span>German</a>
 														</div>
 														<!--end::Menu item-->
@@ -520,7 +1478,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="menu-item px-3">
 															<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/japan.svg" alt="metronic" />
+																<img class="rounded-1" src="../assets/media/flags/japan.svg" alt="metronic" />
 															</span>Japanese</a>
 														</div>
 														<!--end::Menu item-->
@@ -528,7 +1486,7 @@ License: For each use you must have a valid license purchased only from above li
 														<div class="menu-item px-3">
 															<a href="../../demo1/dist/account/settings.html" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="assets/media/flags/france.svg" alt="metronic" />
+																<img class="rounded-1" src="../assets/media/flags/france.svg" alt="metronic" />
 															</span>French</a>
 														</div>
 														<!--end::Menu item-->
@@ -601,7 +1559,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--begin::Page title-->
 								<div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
 									<!--begin::Title-->
-								<h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Triggers</h1>
+								<h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1">Tenders</h1>
 									<!--begin::Separator-->
 									<span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
 									<!--end::Separator-->
@@ -618,17 +1576,17 @@ License: For each use you must have a valid license purchased only from above li
 										</li>
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item text-muted">
-											<a href="triggers.html" class="text-muted text-hover-primary">Triggers</a>
-										</li>
+										<!-- <li class="breadcrumb-item text-muted">
+											<a href="triggers.html" class="text-muted text-hover-primary">Vendors</a>
+										</li> -->
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item">
+										<!-- <li class="breadcrumb-item">
 											<span class="bullet bg-gray-200 w-5px h-2px"></span>
-										</li>
+										</li> -->
 										<!--end::Item-->
 										<!--begin::Item-->
-										<li class="breadcrumb-item text-dark">Triggers</li>
+										<li class="breadcrumb-item text-dark">Tenders</li>
 										<!--end::Item-->
 									</ul>
 									<!--end::Breadcrumb-->
@@ -644,356 +1602,281 @@ License: For each use you must have a valid license purchased only from above li
 						<div class="post d-flex flex-column-fluid" id="kt_post">
 							<!--begin::Container-->
 							<div id="kt_content_container" class="container">
-								<!--begin::Card-->
-								<div class="card">
-									<!--begin::Card header-->
-									<div class="card-header border-0 pt-6">
-										<!--begin::Card title-->
-										<div class="card-title">
-											<!--begin::Search-->
-											<div class="d-flex align-items-center position-relative my-1">
-												<!--begin::Svg Icon | path: icons/duotone/General/Search.svg-->
-												<span class="svg-icon svg-icon-1 position-absolute ms-6">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24"></rect>
-															<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
-															<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path>
-														</g>
-													</svg>
-												</span>
-												<!--end::Svg Icon-->
-												<input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search triggers">
-											</div>
-											<!--end::Search-->
-										</div>
-										<!--begin::Card title-->
-										<!--begin::Card toolbar-->
-										<div class="card-toolbar">
-											<!--begin::Toolbar-->
-											<div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
-												<!--begin::Filter-->
-												<button type="button" class="btn btn-light-primary me-3" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-												<!--begin::Svg Icon | path: icons/duotone/Text/Filter.svg-->
-												<span class="svg-icon svg-icon-2">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24"></rect>
-															<path d="M5,4 L19,4 C19.2761424,4 19.5,4.22385763 19.5,4.5 C19.5,4.60818511 19.4649111,4.71345191 19.4,4.8 L14,12 L14,20.190983 C14,20.4671254 13.7761424,20.690983 13.5,20.690983 C13.4223775,20.690983 13.3458209,20.6729105 13.2763932,20.6381966 L10,19 L10,12 L4.6,4.8 C4.43431458,4.5790861 4.4790861,4.26568542 4.7,4.1 C4.78654809,4.03508894 4.89181489,4 5,4 Z" fill="#000000"></path>
-														</g>
-													</svg>
-												</span>
-												<!--end::Svg Icon-->Filter</button>
-												<!--begin::Menu 1-->
-												<div class="menu menu-sub menu-sub-dropdown w-300px w-md-325px" data-kt-menu="true">
-													<!--begin::Header-->
-													<div class="px-7 py-5">
-														<div class="fs-4 text-dark fw-bolder">Filter Options</div>
-													</div>
-													<!--end::Header-->
-													<!--begin::Separator-->
-													<div class="separator border-gray-200"></div>
-													<!--end::Separator-->
-													<!--begin::Content-->
-													<div class="px-7 py-5">
-														<!--begin::Input group-->
-														<div class="mb-10">
-															<!--begin::Label-->
-															<label class="form-label fs-5 fw-bold mb-3">Type:</label>
-															<!--end::Label-->
-															<!--begin::Input-->
-															<select class="form-select form-select-solid fw-bolder select2-hidden-accessible" data-kt-select2="true" data-placeholder="Select Type" data-allow-clear="true" data-kt-customer-table-filter="month" data-select2-id="select2-data-10-v5id" tabindex="-1" aria-hidden="true">
-																<option data-select2-id="select2-data-12-cp9q"></option>
-																<option value="aug">Add</option>
-																<option value="sep">Update</option>
-																<option value="oct">Delete</option>
-															
-															</select>
-															
-															<!--end::Input-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="mb-10">
-															<!--begin::Label-->
-															<label class="form-label fs-5 fw-bold mb-3">Module Type:</label>
-															<!--end::Label-->
-															<!--begin::Options-->
-															<div class="d-flex flex-column flex-wrap fw-bold" data-kt-customer-table-filter="payment_type">
-																<!--begin::Option-->
-																<label class="form-check form-check-sm form-check-custom form-check-solid mb-3 me-5">
-																	<input class="form-check-input" type="radio" name="module_type" value="all" checked="checked">
-																	<span class="form-check-label text-gray-600">All</span>
-																</label>
-																<!--end::Option-->
-																<!--begin::Option-->
-																<label class="form-check form-check-sm form-check-custom form-check-solid mb-3 me-5">
-																	<input class="form-check-input" type="radio" name="module_type" value="Procurement">
-																	<span class="form-check-label text-gray-600">Procurement</span>
-																</label>
-																<!--end::Option-->
+								<div class="item">
+									<div class="page-header-two">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<table class="table">
+														<tbody><tr>
+															<td>
+															   
+																	<a href="TenderSearch.aspx?SerText=Department Of Information Technology And Electronics&amp;SearchCategory=Department Of Information Technology And Electronics&amp;tenders=Department+Of+Information+Technology+And+Electronics+tenders" id="ctl00_ContentPlaceHolder1_tagCompany" data-toggle="tooltip" data-placement="bottom" title="" class="ui-link" data-original-title="Click here to get ….Tenders from Telecommunication Services / Equipments Industry">
+																		<span id="ctl00_ContentPlaceHolder1_lblcompanyval"><h1>Tenders Published by a company from Telecommunication Services / Equipments Industry</h1></span></a>
+																	<a href="TenderSearch.aspx?SerText=Department Of Information Technology And Electronics&amp;SearchCategory=Department Of Information Technology And Electronics&amp;tenders=Department+Of+Information+Technology+And+Electronics+tenders" id="ctl00_ContentPlaceHolder1_tagviewall" class="view-all-tenders ui-link">View All Tenders</a>
 																
-															</div>
-															<!--end::Options-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Actions-->
-														<div class="d-flex justify-content-end">
-															<button type="reset" class="btn btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true" data-kt-customer-table-filter="reset">Reset</button>
-															<button type="submit" class="btn btn-primary" data-kt-menu-dismiss="true" data-kt-customer-table-filter="filter">Apply</button>
-														</div>
-														<!--end::Actions-->
-													</div>
-													<!--end::Content-->
+																<div id="ctl00_ContentPlaceHolder1_UpdatePanel2">
+							
+																		<div id="ctl00_ContentPlaceHolder1_divsocialbox" class="social-box">
+																			<ul>
+																				<li class="view">
+																					<a href="Dashboard.aspx?tab=1" class="ui-link"><i data-toggle="tooltip" data-placement="bottom" title="" class="eye-icon" aria-hidden="true" data-original-title="View"></i></a>
+																					<a href="Dashboard.aspx?tab=1" class="ui-link">
+																						<span id="ctl00_ContentPlaceHolder1_lblviewcount" class="count">7</span></a>
+																				</li>
+																				
+																				
+																				<li class="share-li">
+																					<input type="submit" name="ctl00$ContentPlaceHolder1$btnshare" value="Share" id="ctl00_ContentPlaceHolder1_btnshare" style="display: none">
+																					<a href="javascript:void(0);" id="lnkShare" class="ui-link"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+																					<div class="sharelinks">
+																						<ul id="ShareLink">
+																							<li>
+																								<a href="https://api.whatsapp.com/send?text=#HW#" onclick="popupwindowAtCenter(this.href,'TenderTiger',600,600);return false;" data-action="share/whatsapp/share" rel="noreferrer" class="whatsapp ui-link" aria-label="Whatsapp" target="_blank">
+																									<i class="fa fa-whatsapp" aria-hidden="true" style="color: #a5233d;"></i>
+																									  <span>Share on WhatsApp</span>
+																								</a>
+																							</li>
+																							<li>
+																								<a onclick="popupwindowAtCenter(this.href,'TenderTiger',600,600);return false;" href="https://www.facebook.com/sharer.php?s=100&amp;u=#HW#&amp;image=#IMG#" rel="noreferrer" aria-label="Facebook" class="facebook ui-link">
+																									<i class="fa fa-facebook-official" aria-hidden="true"></i>
+																									<span>Share on Facebook</span>
+																								</a>
+																							</li>
+																							<li>
+																								<a onclick="popupwindowAtCenter(this.href,'Share on Twitter',600,600);return false;" href="https://twitter.com/intent/tweet?source=&amp;url=#HW#" rel="noreferrer" aria-label="Twitter" class="twitter ui-link">
+																									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+																									<span>Share on Twitter</span>
+																								</a>
+																							</li>
+																							
+																							<li>
+																								<a onclick="popupwindowAtCenter(this.href,'Share on Linked In',600,600);return false;" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=#HW#&amp;title=TenderTiger" rel="noreferrer" aria-label="Linkedin" class="linkedin ui-link">
+																									<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+																									<span>Share on Linkedin</span>
+																								</a>
+																							</li>
+						
+																						</ul>
+																					</div>
+						
+						
+																				</li>
+																				
+																				<li id="ctl00_ContentPlaceHolder1_li1">
+																					<a href="CategorySelection.aspx" id="ctl00_ContentPlaceHolder1_A1" class="ui-link"><i class="fa fa-envelope" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to Subcribe Email Services"></i></a>
+																				</li>
+																				<li id="ctl00_ContentPlaceHolder1_li2">
+																					<a href="#" id="ctl00_ContentPlaceHolder1_A2" onclick="PagePrint();" class="ui-link"><i class="fa fa-print" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to Show Print Preview"></i></a>
+																				</li>
+																			</ul>
+																			<div class="clear"></div>
+																		</div>
+																	
+						</div>
+															</td>
+														</tr>
+													</tbody></table>
 												</div>
-												<!--end::Menu 1-->
-												<!--end::Filter-->
-												<!--begin::Export-->
-												<button type="button" class="btn btn-light-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_customers_export_modal">
-												<!--begin::Svg Icon | path: icons/duotone/Files/Export.svg-->
-												<span class="svg-icon svg-icon-2">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24"></rect>
-															<path d="M17,8 C16.4477153,8 16,7.55228475 16,7 C16,6.44771525 16.4477153,6 17,6 L18,6 C20.209139,6 22,7.790861 22,10 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,9.99305689 C2,7.7839179 3.790861,5.99305689 6,5.99305689 L7.00000482,5.99305689 C7.55228957,5.99305689 8.00000482,6.44077214 8.00000482,6.99305689 C8.00000482,7.54534164 7.55228957,7.99305689 7.00000482,7.99305689 L6,7.99305689 C4.8954305,7.99305689 4,8.88848739 4,9.99305689 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,10 C20,8.8954305 19.1045695,8 18,8 L17,8 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
-															<rect fill="#000000" opacity="0.3" transform="translate(12.000000, 8.000000) scale(1, -1) rotate(-180.000000) translate(-12.000000, -8.000000)" x="11" y="2" width="2" height="12" rx="1"></rect>
-															<path d="M12,2.58578644 L14.2928932,0.292893219 C14.6834175,-0.0976310729 15.3165825,-0.0976310729 15.7071068,0.292893219 C16.0976311,0.683417511 16.0976311,1.31658249 15.7071068,1.70710678 L12.7071068,4.70710678 C12.3165825,5.09763107 11.6834175,5.09763107 11.2928932,4.70710678 L8.29289322,1.70710678 C7.90236893,1.31658249 7.90236893,0.683417511 8.29289322,0.292893219 C8.68341751,-0.0976310729 9.31658249,-0.0976310729 9.70710678,0.292893219 L12,2.58578644 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 2.500000) scale(1, -1) translate(-12.000000, -2.500000)"></path>
-														</g>
-													</svg>
-												</span>
-												<!--end::Svg Icon-->Export</button>
-												<!--end::Export-->
-												<!--begin::Add customer-->
-												
-												<button type="button"   class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">
-													Add trigger
-												</button>
-												<!--end::Add customer-->
-											</div>
-											<!--end::Toolbar-->
-											<!--begin::Group actions-->
-											<div class="d-flex justify-content-end align-items-center d-none" data-kt-customer-table-toolbar="selected">
-												<div class="fw-bolder me-5">
-												<span class="me-2" data-kt-customer-table-select="selected_count"></span>Selected</div>
-												<button type="button" class="btn btn-danger" data-kt-customer-table-select="delete_selected">Delete Selected</button>
-											</div>
-											<!--end::Group actions-->
-										</div>
-										<!--end::Card toolbar-->
-									</div>
-									<!--end::Card header-->
-									<!--begin::Card body-->
-									<div class="card-body pt-0">
-										<!--begin::Table-->
-										<div id="kt_customers_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="table-responsive"><table class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer" id="kt_customers_table" role="grid">
-											<!--begin::Table head-->
-											<thead>
-												<!--begin::Table row-->
-												<tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0" role="row">
-													<th class="w-10px pe-2 sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 29.25px;">
-														<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
-															<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_customers_table .form-check-input" value="1">
-														</div>
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Customer Name: activate to sort column ascending" style="width: 129.469px;">
-														 Name
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 170.766px;">
-														Module Name
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Company: activate to sort column ascending" style="width: 129.469px;">
-														Type
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Payment Method: activate to sort column ascending" style="width: 129.469px;">
-														Route
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Payment Method: activate to sort column ascending" style="width: 129.469px;">
-														Paths
-													</th>
-													<th class="min-w-125px sorting" tabindex="0" aria-controls="kt_customers_table" rowspan="1" colspan="1" aria-label="Created Date: activate to sort column ascending" style="width: 135.453px;">
-														Created Date
-													</th>
-													<th class="text-end min-w-70px sorting_disabled" rowspan="1" colspan="1" aria-label="Actions" style="width: 100.625px;">
-														Actions
-													</th>
-												</tr>
-												<!--end::Table row-->
-											</thead>
-											<!--end::Table head-->
-											<!--begin::Table body-->
-											<tbody class="fw-bold text-gray-600">
-												<tr class="odd">
-													<!--begin::Checkbox-->
-													<td>
-														<div class="form-check form-check-sm form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="1">
-														</div>
-													</td>
-													<!--end::Checkbox-->
-													<!--begin::Name=-->
-													<td>
-														Add Request
-													</td>
-													<!--end::Name=-->
-													<!--begin::Email=-->
-													<td>
-														<a href="#" class="text-gray-600 text-hover-primary mb-1">Request</a>
-													</td>
-													<!--end::Email=-->
-													<!--begin::Email=-->
-													<td>
-														<span class="text-success mb-1">Add</span>
-													</td>
-													<!--end::Email=-->
-													<!--begin::Company=-->
-													<td>Request</td>
-													<!--end::Company=-->
-													<!--begin::Payment method=-->
-													<td data-filter="mastercard">
-														<a href="path_triggers.html" class="text-gray-600 text-hover-primary mb-1">2</a>
-													</td>
-													<!--end::Payment method=-->
-													<!--begin::Date=-->
-													<td data-order="2020-12-14T20:43:00+02:00">14 Dec 2020, 8:43 pm</td>
-													<!--end::Date=-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">Actions
-														<!--begin::Svg Icon | path: icons/duotone/Navigation/Angle-down.svg-->
-														<span class="svg-icon svg-icon-5 m-0">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<polygon points="0 0 24 0 24 24 0 24"></polygon>
-																	<path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)"></path>
-																</g>
-															</svg>
-														</span>
-														<!--end::Svg Icon--></a>
-														<!--begin::Menu-->
-														<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
-															<!--begin::Menu item-->
-															<div class="menu-item px-3">
-																<a href="../../demo1/dist/apps/customers/view.html" class="menu-link px-3">View</a>
-															</div>
-															<!--end::Menu item-->
-															<!--begin::Menu item-->
-															<div class="menu-item px-3">
-																<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Delete</a>
-															</div>
-															<!--end::Menu item-->
-														</div>
-														<!--end::Menu-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-												<tr class="even">
-													<!--begin::Checkbox-->
-													<td>
-														<div class="form-check form-check-sm form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="1">
-														</div>
-													</td>
-													<!--end::Checkbox-->
-													<!--begin::Name=-->
-													<td>
-														Update Request
-													</td>
-													<!--end::Name=-->
-													<!--begin::Email=-->
-													<td>
-														<a href="#" class="text-gray-600 text-hover-primary mb-1">Request</a>
-													</td>
-													<!--end::Email=-->
-													<!--begin::Email=-->
-													<td>
-														<span class="text-primary text-hover-primary mb-1">Update</span>
-													</td>
-													<!--end::Email=-->
-													<!--begin::Company=-->
-													<td>Request</td>
-													<!--end::Company=-->
-													<!--begin::Payment method=-->
-													<td data-filter="mastercard">
-														<a href="path_triggers.html" class="text-gray-600 text-hover-primary mb-1">2</a>
-													</td>
-													<!--end::Payment method=-->
-													<!--begin::Date=-->
-													<td data-order="2020-12-14T20:43:00+02:00">14 Dec 2020, 8:43 pm</td>
-													<!--end::Date=-->
-													<!--begin::Action=-->
-													<td class="text-end">
-														<a href="#" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">Actions
-														<!--begin::Svg Icon | path: icons/duotone/Navigation/Angle-down.svg-->
-														<span class="svg-icon svg-icon-5 m-0">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																	<polygon points="0 0 24 0 24 24 0 24"></polygon>
-																	<path d="M6.70710678,15.7071068 C6.31658249,16.0976311 5.68341751,16.0976311 5.29289322,15.7071068 C4.90236893,15.3165825 4.90236893,14.6834175 5.29289322,14.2928932 L11.2928932,8.29289322 C11.6714722,7.91431428 12.2810586,7.90106866 12.6757246,8.26284586 L18.6757246,13.7628459 C19.0828436,14.1360383 19.1103465,14.7686056 18.7371541,15.1757246 C18.3639617,15.5828436 17.7313944,15.6103465 17.3242754,15.2371541 L12.0300757,10.3841378 L6.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(12.000003, 11.999999) rotate(-180.000000) translate(-12.000003, -11.999999)"></path>
-																</g>
-															</svg>
-														</span>
-														<!--end::Svg Icon--></a>
-														<!--begin::Menu-->
-														<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4" data-kt-menu="true">
-															<!--begin::Menu item-->
-															<div class="menu-item px-3">
-																<a href="../../demo1/dist/apps/customers/view.html" class="menu-link px-3">View</a>
-															</div>
-															<!--end::Menu item-->
-															<!--begin::Menu item-->
-															<div class="menu-item px-3">
-																<a href="#" class="menu-link px-3" data-kt-customer-table-filter="delete_row">Delete</a>
-															</div>
-															<!--end::Menu item-->
-														</div>
-														<!--end::Menu-->
-													</td>
-													<!--end::Action=-->
-												</tr>
-											</tbody>
-											<!--end::Table body-->
-										</table>
-									</div>
-									<div class="row">
-										<div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
-											<div class="dataTables_length" id="kt_customers_table_length">
-												<label>
-													<select name="kt_customers_table_length" aria-controls="kt_customers_table" class="form-select form-select-sm form-select-solid">
-														<option value="10">10</option>
-														<option value="25">25</option>
-														<option value="50">50</option>
-														<option value="100">100</option>
-													</select>
-												</label>
-											</div>
-										</div>
-										<div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
-											<div class="dataTables_paginate paging_simple_numbers" id="kt_customers_table_paginate">
-												<ul class="pagination">
-													<li class="paginate_button page-item previous disabled" id="kt_customers_table_previous">
-														<a href="#" aria-controls="kt_customers_table" data-dt-idx="0" tabindex="0" class="page-link">
-															<i class="previous"></i>
-														</a>
-													</li>
-													<li class="paginate_button page-item active">
-														<a href="#" aria-controls="kt_customers_table" data-dt-idx="1" tabindex="0" class="page-link">1</a>
-													</li>
-													
-													<li class="paginate_button page-item next" id="kt_customers_table_next">
-														<a href="#" aria-controls="kt_customers_table" data-dt-idx="5" tabindex="0" class="page-link">
-															<i class="next"></i>
-														</a>
-													</li>
-												</ul>
 											</div>
 										</div>
 									</div>
+									<div class="tv-div">
+										<div class="container">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="tv-body">
+														<div class="tv-body-left">
+															<table class="table view-numbers-details">
+																<tbody><tr>
+																	<td colspan="2">
+																		<span>
+																			<label>Tender Reference No :</label><i id="ctl00_ContentPlaceHolder1_lblrefNo">61706641</i></span>
+																		
+																		
+																	</td>
+																</tr>
+																<tr class="word-highlight">
+																	<td><b class="td-title">Requirement :</b></td>
+																	<td id="ctl00_ContentPlaceHolder1_lblproductdetailval">Supply of 01 peta byte usable <i class="highlighted-word">san storage</i>Qty  1</td>
+						
+																</tr>
+																
+																 
+																<tr>
+																	<td colspan="2">
+																		
+																	</td>
+																</tr>
+															</tbody></table>
+						
+															<div id="ctl00_ContentPlaceHolder1_divadvetisementImage" class="dp-ad" style="display: none">
+																<a href="#" id="ctl00_ContentPlaceHolder1_lnkadvetisementImage" onclick="OpenRegistration(63977137);" class="ui-link">
+																	<img src="https://www.tendertiger.com/Contentnd/images/pay.png?v=1"></a>
+															</div>
+															
+						
+										 
+															<div class="tv-body-left-tabs" id="tabsection">
+																<ul class="nav nav-tabs viewT-Tab">
+																	<li class="active" id="tabdocument">
+																		<a data-toggle="tab" href="#tabOne" class="ui-link">
+																			<span>Tender Document <b id="ctl00_ContentPlaceHolder1_tdcount">4</b>
+																				<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="" aria-hidden="true" data-original-title="Click on document, if not download, please allow pop-up for this website."></i>
+																			</span>
+																		</a>
+																	</li>
+																	
+																</ul>
+						
+																<div class="tab-content">
+																	<div id="tabOne" class="tab-pane fade in active">
+																		<div id="ctl00_ContentPlaceHolder1_divDocs" class="view-documents">
+																			<div id="ctl00_ContentPlaceHolder1_divNit" class="title">NIT</div>
+																			<ul>
+																				<li id="ctl00_ContentPlaceHolder1_lblDocPath1"><a href="#" onclick="OpenRegistration(63977137)" class="ui-link"><i class="fa fa-file-text" aria-hidden="True"></i><p>Document 1.zip</p></a></li>
+																			</ul>
+																			<div id="ctl00_ContentPlaceHolder1_divotherDoctitle" class="title">Tender Technical Details</div>
+																			<div id="ctl00_ContentPlaceHolder1_ucAddDoc1_lblOtherDocPath" style="text-align: left;"><ul><li><a href="#" onclick="OpenRegistration(63977137)" class="ui-link"><i><img src="https://www.tendertiger.com/Contentnd/images/pdf.svg" alt="PDF File"></i><p>Document 1.pdf</p></a></li> <li><a href="#" onclick="OpenRegistration(63977137)" class="ui-link"><i class="fa fa-file-text" aria-hidden="True"></i><p>Document 2.csv</p></a></li> <li><a href="#" onclick="OpenRegistration(63977137)" class="ui-link"><i><img src="https://www.tendertiger.com/Contentnd/images/word.svg" alt="Word File"></i><p>Document 3.docx</p></a></li> </ul></div>
+						<div id="ctl00_ContentPlaceHolder1_ucAddDoc1_lblPQPath" style="text-align: left; display: none;">
+							PQ Documents<p></p>
+						<p></p> <p></p> <p></p> </div>
+						<input type="hidden" name="ctl00$ContentPlaceHolder1$ucAddDoc1$hdntechCount" id="ctl00_ContentPlaceHolder1_ucAddDoc1_hdntechCount" value="3">
+						<input type="hidden" name="ctl00$ContentPlaceHolder1$ucAddDoc1$hdnSrNo" id="ctl00_ContentPlaceHolder1_ucAddDoc1_hdnSrNo" value="63977137">
+						<input type="hidden" name="ctl00$ContentPlaceHolder1$ucAddDoc1$hdnotherdocstatus" id="ctl00_ContentPlaceHolder1_ucAddDoc1_hdnotherdocstatus" value="available">
+						
+						
+						<script>
+							var PQDocPathcount = $("#ctl00_ContentPlaceHolder1_ucAddDoc1_lblPQPath").find("a");  
+							if (PQDocPathcount.length > 0) {
+								$("#ctl00_ContentPlaceHolder1_divotherDoc").css("display", "");
+								$("#ctl00_ContentPlaceHolder1_ucAddDoc1_lblPQPath").css("display", "");  
+								$("#ctl00_ContentPlaceHolder1_divotherDocseparator").css("display", "");
+								$("#ctl00_ContentPlaceHolder1_divdocnotavalable").css("display", "none");
+							}
+							else {
+								$("#ctl00_ContentPlaceHolder1_divotherDoc").css("display", "none");
+								$("#ctl00_ContentPlaceHolder1_ucAddDoc1_lblPQPath").css("display", "none");     
+								$("#ctl00_ContentPlaceHolder1_divotherDocseparator").css("display", "none");
+							}
+						</script>
+						
+						
+																			<div class="text-end">
+																				<a href="#" id="ctl00_ContentPlaceHolder1_lnkDownloadOtherDoc" onclick="OpenRegistration(63977137);" class="ui-link">Download All</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="tabTwo" class="tab-pane fade">
+																		
+																	</div>
+																</div>
+															</div>
+						
+															 
+						
+															
+						
+															<div id="divProbableBidders" class="list-bidder-div clear">
+																<div class="bidder-title">Probable Participants</div>
+																<div class="table-responsive-mobile">
+																	<table class="table table-bordered table-striped" id="tbl_competator">
+																		<thead>
+																			<tr>
+																				<th style="width: 55%">Bidder Name</th>
+																				<th style="width: 15%" class="text-center">Location</th>
+																				<th style="width: 15%" class="text-center">Buisness Categories</th>
+																				<th style="width: 15%" class="text-center">Bid History</th>
+																			</tr>
+																		</thead>
+																		<tbody><tr><td style="width:40%"><a target="_blank" href="TenderResult.aspx?BidderName=Eratronics Pvt Ltd" class="ui-link">Eratronics Pvt Ltd</a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Location" onclick="BidderLocation(1437607,&quot;Eratronics Pvt Ltd&quot;)"> <i class="fa fa-map-marker" aria-hidden="true"></i></a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data="" -="" toggle="tooltip" placement="bottom" title="Business Category" onclick="BusinessCategory(1437607,&quot;Eratronics Pvt Ltd&quot;)"> <i class="fa fa-list" aria-hidden="true"></i></a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data="" -="" toggle="tooltip" placement="bottom" title="View History" onclick="BindBiddersGraph(1437607,&quot;Eratronics Pvt Ltd&quot;,1)"> <i class="fa fa-area-chart" aria-hidden="true"></i></a></td></tr><tr><td style="width:40%"><a target="_blank" href="TenderResult.aspx?BidderName=Aditel Communications" class="ui-link">Aditel Communications</a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Location" onclick="BidderLocation(937024,&quot;Aditel Communications&quot;)"> <i class="fa fa-map-marker" aria-hidden="true"></i></a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data="" -="" toggle="tooltip" placement="bottom" title="Business Category" onclick="BusinessCategory(937024,&quot;Aditel Communications&quot;)"> <i class="fa fa-list" aria-hidden="true"></i></a></td><td style="width:10%" class="text-center list-bidder-icons"><a href="javascript:void(0)" data="" -="" toggle="tooltip" placement="bottom" title="View History" onclick="BindBiddersGraph(937024,&quot;Aditel Communications&quot;,1)"> <i class="fa fa-area-chart" aria-hidden="true"></i></a></td></tr></tbody>
+						
+																		<tfoot id="divViewMoreBidder" style="display: none">
+																			<tr>
+																				<td colspan="4">
+																					
+																					<center>
+																							
+																						
+																							<a href="javascript:void(0);" onclick="OpenRegistration(63752870)" class="ui-link">View More</a>
+																						
+						
+																					 </center>
+																					
+																					  
+																				</td>
+																			</tr>
+																		</tfoot>
+						
+																	</table>
+																</div>
+																<div class="listing-gifdiv" id="divLoading_Competator" style="display: none;">
+																	<div>
+																		<center>   <img src="/Contentnd/images/Loading.gif" width="314" height="20"></center>
+																	</div>
+																</div>
+															</div>
+						
+														</div>
+														<div class="tv-body-right">
+															<div class="tender-result-count">
+																<a href="TenderResult.aspx?SerText=63977137&amp;Sername=Networking" id="ctl00_ContentPlaceHolder1_aTenderResultRedirect" target="_blank" class="ui-link">
+																	<img src="https://www.tendertiger.com/Contentnd/images/result-icon.png" alt="Result Icon"> 
+																	<b>
+																	<span id="ctl00_ContentPlaceHolder1_lblTenderResultCount">1028</span>
+																	Tender Result</b> found for your category of interest</a>
+															</div>
+															<div class="title">Tender Value</div>
+															<div class="sub-title">Tender Estimated Cost</div>
+															<h3>
+																<span id="ctl00_ContentPlaceHolder1_lblCurr"></span>
+																<span id="ctl00_ContentPlaceHolder1_lbltendervalueval">INR 5 Cr</span>
+															</h3>
+															<div id="ctl00_ContentPlaceHolder1_divEmd" class="sub-title">EMD</div>
+															<p>
+																<span id="ctl00_ContentPlaceHolder1_lblcurrEMD">INR</span>
+																<span id="ctl00_ContentPlaceHolder1_lblEMD">250,000</span>
+															</p>
+															
+															<p>
+																
+																
+															</p>
+						
+															<div class="separator"></div>
+						
+															<div class="title">Key Dates</div>
+															<div class="sub-title">Due on</div>
+															<p id="ctl00_ContentPlaceHolder1_lblclosingdateval">05  July  2023<b class="closing-date">Closing today</b></p>
+						
+															
+															<p>
+																
+															</p>
+															
+															
+						
+															<div class="separator"></div>
+						
+															<div class="title">Location</div>
+															<p>
+																<span id="ctl00_ContentPlaceHolder1_lbllocationVal">Uttar Pradesh , India</span>
+															</p>
+															<div id="ctl00_ContentPlaceHolder1_divAddr" class="sub-title">Contact Details</div>
+															<p>
+																<span id="ctl00_ContentPlaceHolder1_lblAddress"><a href="#" onclick="OpenRegistration(63977137)" class="ui-link"> Can be viewed by Subscribers </a></span>
+															</p>
+						
+													 
+											 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									 
 								</div>
-										<!--end::Table-->
-									</div>
-									<!--end::Card body-->
-								</div>
-								<!--end::Card-->
 								
 							</div>
 							<!--end::Container-->
@@ -1038,148 +1921,22 @@ License: For each use you must have a valid license purchased only from above li
 			</span>
 			<!--end::Svg Icon-->
 		</div>
-		<div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-modal="true" role="dialog">
-			<!--begin::Modal dialog-->
-			<div class="modal-dialog modal-dialog-centered mw-900px">
-				<!--begin::Modal content-->
-				<div class="modal-content">
-					<!--begin::Modal header-->
-					<div class="modal-header">
-						<!--begin::Modal title-->
-						<h2>Create Trigger</h2>
-						<!--end::Modal title-->
-						<!--begin::Close-->
-						<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-							<!--begin::Svg Icon | path: icons/duotone/Navigation/Close.svg-->
-							<span class="svg-icon svg-icon-1">
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-									<g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#000000">
-										<rect fill="#000000" x="0" y="7" width="16" height="2" rx="1"></rect>
-										<rect fill="#000000" opacity="0.5" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000)" x="0" y="7" width="16" height="2" rx="1"></rect>
-									</g>
-								</svg>
-							</span>
-							<!--end::Svg Icon-->
-						</div>
-						<!--end::Close-->
-					</div>
-					<!--end::Modal header-->
-					<!--begin::Modal body-->
-					<div class="modal-body py-lg-10 px-lg-10">
-						<form id="kt_modal_add_permission_form" class="form fv-plugins-bootstrap5 fv-plugins-framework" action="#">
-							<!--begin::Input group-->
-							<div class="fv-row mb-7 fv-plugins-icon-container">
-								<!--begin::Label-->
-								<label class="fs-6 fw-bold form-label mb-2">
-									<span class="required">Trigger Name</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Transaction Name" data-bs-original-title="" title=""></i>
-								</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<input class="form-control form-control-solid" placeholder="Enter trigger Name" name="transaction_name">
-								<!--end::Input-->
-								<div class="fv-plugins-message-container invalid-feedback"></div>
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="fv-row mb-7 fv-plugins-icon-container">
-								<!--begin::Label-->
-								<label class="fs-6 fw-bold form-label mb-2">
-									<span class="required">	Module Name</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Module Name" data-bs-original-title="" title=""></i>
-								</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<select class="form-select form-select-solid fw-bolder " >
-									<option >Select Module</option>
-									<option value="Procurement" >Procurement</option>
-								</select>												<!--end::Input-->
-								<div class="fv-plugins-message-container invalid-feedback"></div>
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="fv-row mb-7 fv-plugins-icon-container">
-								<!--begin::Label-->
-								<label class="fs-6 fw-bold form-label mb-2">
-									<span class="required">	Type</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Type add|update|delete" data-bs-original-title="" title=""></i>
-								</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<select class="form-select form-select-solid fw-bolder " >
-									<option >Select Type</option>
-									<option value="Add" >Add</option>
-									<option value="Update" >Update</option>
-									<option value="Delete" >Delete</option>
-								</select>												<!--end::Input-->
-								<div class="fv-plugins-message-container invalid-feedback"></div>
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="fv-row mb-7 fv-plugins-icon-container">
-								<!--begin::Label-->
-								<label class="fs-6 fw-bold form-label mb-2">
-									<span class="required">	Route</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Route add|update|delete" data-bs-original-title="" title=""></i>
-								</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<select class="form-select form-select-solid fw-bolder  "   >
-									<option >Select Route</option>
-									<option value="procurement.add" >procurement.add</option>
-									<option value="procurement.update" >procurement.update</option>
-									<option value="procurement.delete" >procurement.delete</option>
-								</select>												<!--end::Input-->
-								<div class="fv-plugins-message-container invalid-feedback"></div>
-							</div>
-							<!--end::Input group-->
-							<!--begin::Input group-->
-							<div class="fv-row mb-7 fv-plugins-icon-container">
-								<!--begin::Label-->
-								<label class="fs-6 fw-bold form-label mb-2">
-									<span class="required">Description</span>
-									<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Decription" data-bs-original-title="" title=""></i>
-								</label>
-								<!--end::Label-->
-								<!--begin::Input-->
-								<input class="form-control form-control-solid" placeholder="Enter Decription " name="transaction_name">
-								<!--end::Input-->
-								<div class="fv-plugins-message-container invalid-feedback"></div>
-							</div>
-							<!--end::Input group-->
-							
-							
-							<!--begin::Actions-->
-							<div class="text-center pt-15">
-								<button type="reset" class="btn btn-light me-3" data-kt-permissions-modal-action="cancel">Discard</button>
-								<button type="submit" class="btn btn-primary" data-kt-permissions-modal-action="submit">
-									<span class="indicator-label">Submit</span>
-									<span class="indicator-progress">Please wait...
-									<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-								</button>
-							</div>
-							<!--end::Actions-->
-						<div>
-
-						</div>
-					</form>
-					</div>
-					<!--end::Modal body-->
-				</div>
-				<!--end::Modal content-->
-			</div>
-			<!--end::Modal dialog-->
-		</div>
+		
+		
+	 
 		<!--end::Scrolltop-->
 		<!--end::Main-->
 		<!--begin::Javascript-->
 		<!--begin::Global Javascript Bundle(used by all pages)-->
-		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/js/scripts.bundle.js"></script>
+		<script src="../assets/plugins/global/plugins.bundle.js"></script>
+		<script src="../assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="../assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+		<script src="../assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
 		<!--end::Page Vendors Javascript-->
+		<script src="../assets/js/custom/modals/create-app.js"></script>
+		
 		
 		<!--end::Javascript-->
 	</body>

@@ -323,21 +323,71 @@ License: For each use you must have a valid license purchased only from above li
 										<span class="menu-title">Requests</span>
 									</a>
 								</div>
-								<div class="menu-item">
-									<a class="menu-link active" href="tenders.html">
+								<div data-kt-menu-trigger="click" class="menu-item here menu-accordion">
+									<!--begin:Menu link-->
+									<span class="menu-link">
 										<span class="menu-icon">
-											<!--begin::Svg Icon | path: icons/duotone/Design/PenAndRuller.svg-->
+											<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
 											<span class="svg-icon svg-icon-2">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-													<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-													<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor"></rect>
+												<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="currentColor"></rect>
+												<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="currentColor"></rect>
+												<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="currentColor"></rect>
 												</svg>
 											</span>
 											<!--end::Svg Icon-->
 										</span>
 										<span class="menu-title">Tenders</span>
-									</a>
-								</div>
+										<span class="menu-arrow"></span>
+									</span><!--end:Menu link--><!--begin:Menu sub-->
+									<div class="menu-sub menu-sub-accordion" kt-hidden-height="248" style="display: none; overflow: hidden;">
+										<!--begin:Menu item-->
+										<div class="menu-item">
+											<!--begin:Menu link-->
+											<a class="menu-link active" href="../tenders/pending_tenders.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Pending Tenders</span>
+												<span class="menu-badge"><span class="badge badge-danger">3</span></span>
+											</a>
+											
+											<!--end:Menu link-->
+										</div>
+										<!--end:Menu item-->
+										
+											   <!--begin:Menu item-->
+										<div class="menu-item">
+											<!--begin:Menu link-->
+											<a class="menu-link " href="../tenders/active_tenders.html">
+												<span class="menu-bullet">
+													<span class="bullet bullet-dot"></span>
+												</span>
+												<span class="menu-title">Active Tenders</span>
+												<span class="menu-badge"><span class="badge badge-danger">3</span></span>
+
+											</a>
+											<!--end:Menu link-->
+										</div>
+										<!--end:Menu item-->     
+											   <!--begin:Menu item-->
+											   <div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link " href="../tenders/compete_tenders.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Complete Tenders</span>
+													<span class="menu-badge"><span class="badge badge-danger">3</span></span>
+
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->          
+										</div>
+										<!--end:Menu sub-->
+									</div>
 								<div class="menu-item">
 									<a class="menu-link active" href="projects.html">
 										<span class="menu-icon">
@@ -732,250 +782,580 @@ License: For each use you must have a valid license purchased only from above li
 						<div class="post d-flex flex-column-fluid" id="kt_post">
 							<!--begin::Container-->
 							<div id="kt_content_container" class="container">
-								<!--begin::Card-->
-								<div class="card">
-									
-									<!--begin::Card body-->
-									<div class="card-body py-20">
-										<!-- begin::Wrapper-->
-										<div class="mw-lg-950px mx-auto w-100">
-											<!-- begin::Header-->
-											<div class="d-flex justify-content-between flex-column flex-sm-row mb-1 border-b-double ">
-												<div class="text-center">
-													<h4 class="fw-bolder text-gray-800 fs-2qx pe-5 pb-7">Purchase Requisition</h4>
-													<h4 class="fw-bolder text-gray-800 fs-2qx pe-5 pb-7">طلب شراء</h4>
-												</div>
+								<div class="card">     
+									<!--begin::Body-->
+									<div class="card-body p-lg-17">
+										<!--begin::Hero-->
+								<div class="position-relative mb-17">
+									<!--begin::Overlay-->
+									<div class="overlay overlay-show">    
+										<!--begin::Image-->   
+										<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-150px" style="background-color: #df4324;">                       
+										</div>
+										<!--end::Image-->                
+										
+										 
+										<!--end::layer-->     
+									</div>  
+									<!--end::Overlay-->  
+								
+									<!--begin::Heading-->
+									<div class="position-absolute text-white mb-8 ms-10 bottom-0">
+										<!--begin::Title-->
+										<h3 class="text-white fs-2qx fw-bold mb-3 m">buying Laptop</h3>
+										<!--end::Title-->
+								
+										<!--begin::Text-->
+										<div class="fs-5 fw-semibold">
+											PR Request
+										</div>   
+										<!--end::Text-->
+									</div>  
+									<!--end::Heading-->  
+								</div>
+								<!--end::-->
+								
+								 
+								
+								 
+								
+								 
+								
+								 
+								   
+										
+										<!--begin::Layout-->
+										<div class="d-flex flex-column flex-lg-row mb-17">
+											<!--begin::Content-->
+											<div class="flex-lg-row-fluid me-0 me-lg-20">
 												
-								
-												<!--end::Logo-->
-												<div class="text-sm-end">
-													<!--begin::Logo-->
-													<a href="#" class="d-block mw-350px ms-sm-auto">
-														<img alt="Logo" src="assets/media/shames-logo.png" class="w-100">
-													</a>
-													<!--end::Logo-->
-								
-													<!--begin::Text-->
-													<div class="text-sm-end fw-semibold fs-4 text-muted mt-7">
-														<div class="d-flex justify-content-between">
-															<span>Serial No :</span>
-															<span>ST-PR-0000149</span>	
-															<span> الرقم التسلسلي</span>
-														</div>
-														
-													</div>
-													<!--end::Text-->
+								<!--begin::Form-->
+									<form id="kt_modal_add_permission_form" class="form mb-15 fv-plugins-bootstrap5 fv-plugins-framework" method="post" id="kt_careers_form">
+										<div class="row">
+											<div class="col-md-6">
+												<!--begin::Input group-->
+												<div class="fv-row mb-7 fv-plugins-icon-container">
+													<!--begin::Label-->
+													<label class="fs-6 fw-bold form-label mb-2">
+														<span class="required">Request Name </span>
+														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Quantity" data-bs-original-title="" title=""></i>
+													</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<input class="form-control form-control-solid" placeholder="Request Name" value="buying Laptop" disabled name="Request Name">
+																
+													<!--end::Input-->
+													<div class="fv-plugins-message-container invalid-feedback"></div>
 												</div>
+												<!--end::Input group-->
 											</div>
-											<!--end::Header-->
-								
-											<!--begin::Body-->
-											<div class="pb-12 ">
-												<!--begin::Wrapper-->
-												<div class="row header-title orange-bg-color m-auto" style="width: 100%;">
-													<div class="col-md-6"> <p class="float-start">To be Completed by Requestor</p></div>
-													<div class="col-md-6"><p class="float-end"> تتم تعبئة ما يلي من قبل مقدم الطلب</p></div>
-												</div>
-												<div class="d-flex flex-column gap-7 gap-md-10 mt-5">
-													<div class="info-invoice">
-														<div class="table-responsive">
-															<table class="table table-bordered">
-																
-																<tbody>
-																	<tr class="fw-bold fs-6 " style="font-family: bold;">
-																		<th class="text-start ">Department:</th>
-																		<th class="text-center">authority corporations Support services</th>
-																		<th class="text-end"> : القسم</th>
-																	
-																	</tr>
-																	<tr class="fw-bold fs-6 " style="font-family: bold;">
-																		<th class="text-start ">Date:</th>
-																		<th class="text-center">24-05-2023</th>
-																		<th class="text-end"> : التاريخ</th>
-																	
-																	</tr>
-																	<tr class="fw-bold fs-6 " style="font-family: bold;">
-																		<th class="text-start ">Expected Delivery Date:</th>
-																		<th class="text-center">24-05-2023</th>
-																		<th class="text-end"> : تاريخ الاتسلام المتوقع</th>
-																	
-																	</tr>
-																</tbody>
-															</table>
-														</div>
-
-													</div>
-													<div class="items-invoices">
-														<div class="row">
-															<div class="col-md-12">
-																<div class="table-responsive">
-																	<table class="table" id="table">
-																		<thead>
-																			<tr class="fw-bold fs-6 text-gray-800">
-																				<th>Po Number</th>
-																				<th>Itme no</th>
-																				<th>Desctiption</th>
-																				<th>Category</th>
-																				<th>Cost Center</th>
-																				<th>Date</th>
-																				<th>Quantity</th>
-																				<th>Unit</th>
-																				<th>Price</th>
-																				<th>Total</th>
-																			</tr>
-																		</thead>
-																		<tbody id="show_item">
-																			<tr>
-																				<td>ST-PO-000052</td>
-																				<td>CM-000001</td>
-																				<td>Car Sticker</td>
-																				<td>Administraion</td>
-																				<td>Car Maintenance</td>
-																				<td>17-6-2023</td>
-																				<td></td>
-																				<td>piece</td>
-																				<td>undefined</td>
-																				<td>50</td>
-																			</tr>
-																		</tbody>
-																	
-																	</table>
-																</div>
-															 </div>
-														</div>
-													</div>
-								
-													<div class="technical_specifications row">
-														<div class="col-md-12 technical_specifications_title" >
-															
-																<p>Technical Specifications</p>
-																<p>المواصفات التقنية</p>
-															
-														</div>
-														<div class="col-md-6">
-															<p></p>
-														</div>
-													</div>
-													<div class="recommended_suppliers row">
-														<div class="col-md-12 recommended_suppliers_title" >
-															
-																<p>Recommended Suppliers</p>
-																<p>الموردين المقترحين</p>
-															
-														</div>
-														<div class="col-md-6">
-															<p></p>
-														</div>
-													</div>
-													<div class="info-invoice">
-														<div class="table-responsive">
-															<table class="table table-bordered">
-																
-																<tbody>
-																	<tr class="fw-bold fs-6 " style="font-family: bold;">
-																		<th class="text-start ">Total amount </th>
-																		<th class="text-center">2,300.00 AED</th>
-																		<th class="text-end">  التكلفة التقريبية</th>
-																	
-																	</tr>
-																	
-																	<tr class="fw-bold fs-6 " style="font-family: bold;">
-																		<th class="text-start ">Estimated cost </th>
-																		<th class="text-center">2,000.00 AED</th>
-																		<th class="text-end">   المبلغ الاجمالي </th>
-																	
-																	</tr>
-																
-																</tbody>
-															</table>
-														</div>
-
-													</div>
-													<div class="request_by row">
-														<div class="col-md-12 request_by_title" >
-															<div class="row">
-																<div class="col-md-8">
-																	<p>Request by</p>
-																</div>
-																<div class="col-md-2">
-																	<p>Date</p>
-																</div>
-																<div class="col-md-2">
-																	<p>Signature</p>
-																</div>
-															</div>
-															
-														</div>
-														<div class="col-md-12 request_by_desc" >
-															<div class="row">
-																<div class="col-md-8">
-																	<p><b>Assistant Administrator</b> <span class="ms-15">Mohamed AL Owais</span></p>
-																</div>
-																<div class="col-md-2">
-																	<p>06-05-2023</p>
-																</div>
-																<div class="col-md-2">
-																	<p></p>
-																</div>
-															</div>
-															
-														</div>
+											<div class="col-md-6">
+												<!--begin::Input group-->
+											   <div class="fv-row mb-7 fv-plugins-icon-container">
+												   <!--begin::Label-->
+												   <label class="fs-6 fw-bold form-label mb-2">
+													   <span class="required">Request Type </span>
+													   <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Notes" data-bs-original-title="" title=""></i>
+												   </label>
+												   <!--end::Label-->
+												   <!--begin::Input-->
+												   <select class="form-select form-select-solid fw-bolder js-programmatic-disable" disabled id="request_type" data-control="select2" data-placeholder="Select an option" >
+													   <option ></option>
+													   <option value="1" >single source request</option>
+													   <option value="2"  selected>pr request</option>
+													   <option value="3" >contribution / Sponsorship / subscription</option>
+													   <option value="4" >request for information</option>
+													   
+												   
+												   </select>	
+																				   <!--end::Input-->
+												   <div class="fv-plugins-message-container invalid-feedback"></div>
+											   </div>
+											   <!--end::Input group-->
+										   </div>
+										</div>
+										<div class="row">
+											
+											<div class="col-md-6">
+												 <!--begin::Input group-->
+												<div class="fv-row mb-7 fv-plugins-icon-container">
+													<!--begin::Label-->
+													<label class="fs-6 fw-bold form-label mb-2">
+														<span class="required">Department </span>
+														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Notes" data-bs-original-title="" title=""></i>
+													</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<select class="form-select form-select-solid fw-bolder js-programmatic-disable" data-control="select2" data-placeholder="Select an option" >
+														<option ></option>
+														<option value="1" selected >authority corporations support services</option>
 														
-													</div>
-													<div class="request_by row">
-														<div class="col-md-12 request_by_title" >
-															<div class="row">
-																<div class="col-md-8">
-																	<p>Approved by</p>
-																</div>
-																<div class="col-md-2">
-																	<p>Date</p>
-																</div>
-																<div class="col-md-2">
-																	<p>Signature</p>
-																</div>
-															</div>
-															
-														</div>
-														<div class="col-md-12 request_by_desc" >
-															<div class="row">
-																<div class="col-md-8">
-																	<p><b>Budget Controller</b> <span class="ms-15">Madhusudan Jhawar</span></p>
-																</div>
-																<div class="col-md-2">
-																	<p>06-05-2023</p>
-																</div>
-																<div class="col-md-2">
-																	<p></p>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-8">
-																	<p><b>Department Head</b> <span class="ms-15">Ibrahim Al Hashim</span></p>
-																</div>
-																<div class="col-md-2">
-																	<p>06-05-2023</p>
-																</div>
-																<div class="col-md-2">
-																	<p></p>
-																</div>
-															</div>
-															
-														</div>
-														
-													</div>
+													
+													</select>	
+																					
+													<!--end::Input-->
+													<div class="fv-plugins-message-container invalid-feedback"></div>
 												</div>
-												<!--end::Wrapper-->
+												<!--end::Input group-->
 											</div>
-											<!--end::Body-->
-								
+											<div class="col-md-6">
+												<!--begin::Input group-->
+												<div class="fv-row mb-7 fv-plugins-icon-container">
+													<!--begin::Label-->
+													<label class="fs-6 fw-bold form-label mb-2">
+														<span class="required">Department Remaining Budget </span>
+														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Quantity" data-bs-original-title="" title=""></i>
+													</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<input class="form-control form-control-solid" placeholder="Department Remaining Budget" readonly value="5000$"  name="Request Name">
+																
+													<!--end::Input-->
+													<div class="fv-plugins-message-container invalid-feedback"></div>
+												</div>
+												<!--end::Input group-->
+											</div>
+											
 											
 										</div>
-										<!-- end::Wrapper-->
+										
+										 
+										 
+										<div id="div_sponsorship"  >
+											<div class="row">
+												<div class="col-md-6">
+													
+														<!--begin::Input group-->
+														<div class="fv-row mb-7 fv-plugins-icon-container">
+															<!--begin::Label-->
+															<label class="fs-6 fw-bold form-label mb-2">
+																<span class="required">Projects </span>
+																<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Notes" data-bs-original-title="" title=""></i>
+															</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<select class="form-select form-select-solid fw-bolder js-programmatic-disable" disabled data-control="select2" data-placeholder="Select an option" >
+																<option ></option>
+																<option value="1"  selected>Project 1</option>
+																
+															
+															</select>	
+																							
+															<!--end::Input-->
+															<div class="fv-plugins-message-container invalid-feedback"></div>
+														</div>
+														 
+													
+													
+											   </div>
+											   
+											   <div class="col-md-6">
+												
+													<!--begin::Input group-->
+												   <div class="fv-row mb-7 fv-plugins-icon-container">
+													   <!--begin::Label-->
+													   <label class="fs-6 fw-bold form-label mb-2">
+														   <span class="required">Company </span>
+														   <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Notes" data-bs-original-title="" title=""></i>
+													   </label>
+													   <!--end::Label-->
+													   <!--begin::Input-->
+													   <select class="form-select form-select-solid fw-bolder js-programmatic-disable" disabled data-control="select2" data-placeholder="Select an option" >
+														   <option ></option>
+														   <option value="1"  selected>Company 1</option>
+														   
+													   
+													   </select>	
+																					   
+													   <!--end::Input-->
+													   <div class="fv-plugins-message-container invalid-feedback"></div>
+												   </div>
+												   <!--end::Input group-->
+												
+												
+											   </div>
+											   
+											   
+										   </div>
+											
+										</div>
+										
+									<div>
+			
+									</div>
+								</form>
+								<!--end::Form-->
+								<!--begin::Job-->
+								
+								<!--end::Job-->
+									
+								 
+									 
+											</div>  
+											<!--end::Content-->
+								
+											<!--begin::Sidebar-->
+											<div class="flex-lg-row-auto w-100 w-lg-275px w-xxl-350px">
+												
+								<!--begin::Careers about-->
+								<div class="card bg-light ">
+									<!--begin::Body-->
+									<div class="card-body">
+										<!--begin::Top-->
+										<div class="mb-7">
+											<!--begin::Title-->
+											<h2 class="fs-1 text-gray-800 w-bolder mb-6">                           
+												Brief                               
+											</h2>
+											<!--end::Title-->
+											
+											<!--begin::Text-->
+											<p class="fw-semibold fs-6 text-gray-600">
+												First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, 
+												even if you can type eighty words as per minute and your writing skills are sharp.
+											</p>
+											<!--end::Text-->
+										</div>    
+										<!--end::Top-->    
+								
+										 
+									</div>
+									<!--end::Body-->
+								</div>
+								<!--end::Careers about-->
+								 
+											</div>
+											<!--end::Sidebar-->
+										</div>
+										<!--end::Layout-->    
+										
+										<!--begin::Section-->
+										<div class="mb-19">
+											<div class="text-center mb-12">
+										<!--begin::Title-->
+										<h3 class="fs-2hx text-dark mb-5">Items</h3>
+										<!--end::Title-->
+								
+										 
+									</div> 
+									<!--begin::Card-->
+								<div class="card">
+									<!--begin::Card header-->
+									<div class="card-header border-0 pt-6">
+										<!--begin::Card title-->
+										<div class="card-title">
+											<!--begin::Search-->
+											<div class="d-flex align-items-center position-relative my-1">
+												<!--begin::Svg Icon | path: icons/duotone/General/Search.svg-->
+												<span class="svg-icon svg-icon-1 position-absolute ms-6">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															<rect x="0" y="0" width="24" height="24"></rect>
+															<path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+															<path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path>
+														</g>
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<input type="text" data-kt-customer-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Items">
+											</div>
+											<!--end::Search-->
+										</div>
+										<!--begin::Card title-->
+										<!--begin::Card toolbar-->
+										<div class="card-toolbar">
+											<!--begin::Toolbar-->
+											<div class="d-flex justify-content-end" data-kt-customer-table-toolbar="base">
+												<!--begin::Filter-->
+												
+											</div>
+											<!--end::Toolbar-->
+											<!--begin::Group actions-->
+											<div class="d-flex justify-content-end align-items-center d-none" data-kt-customer-table-toolbar="selected">
+												<div class="fw-bolder me-5">
+												<span class="me-2" data-kt-customer-table-select="selected_count"></span>Selected</div>
+												<button type="button" class="btn btn-danger" data-kt-customer-table-select="delete_selected">Delete Selected</button>
+											</div>
+											<!--end::Group actions-->
+										</div>
+										<!--end::Card toolbar-->
+									</div>
+									<!--end::Card header-->
+									<!--begin::Card body-->
+									<div class="card-body pt-0">
+										<!--begin::Table-->
+										<div id="kt_customers_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="table-responsive"><table class="table align-middle table-row-dashed fs-6 gy-5 dataTable no-footer" id="kt_customers_table" role="grid">
+											<!--begin::Table head-->
+											<thead>
+												<tr class="text-start text-muted text-uppercase gs-0">
+													<th class="min-w-125px sorting">Image</th>
+													<th class="min-w-125px sorting">Itme no</th>
+													<th class="min-w-125px sorting">Desc</th>
+													<th class="min-w-125px sorting">Category</th>
+													<th class="min-w-125px sorting">Cost </th>
+													<th class="min-w-125px sorting">Date</th>
+													<th class="min-w-125px sorting">Quantity</th>
+													<th class="min-w-125px sorting">Unit</th>
+													<th class="min-w-125px sorting">Price</th>
+													<th class="min-w-125px sorting">Total</th>
+													<th class="min-w-125px sorting">Action</th>
+												</tr>
+											</thead>
+											<!--end::Table head-->
+											<!--begin::Table body-->
+											  
+											<tbody class="fw-bold text-gray-600">
+																	
+												<tr>
+													<td><img src="assets/media/avatars/150-1.jpg" width="50" alt=""></td>
+													<td>CM-000001</td>
+													<td>Car Sticker</td>
+													<td>Administraion</td>
+													<td>Car Maintenance</td>
+													<td>17-6-2023</td>
+													<td></td>
+													<td>piece</td>
+													<td>undefined</td>
+													<td>50</td>
+													<td><a href="javascript:;" class="badge badge-success " data-bs-toggle="modal" data-bs-target="#kt_modal_add_item">
+															<i class="fa fa-edit text-white"></i> </a><a href="javascript:;" id="DeleteButton"
+															class="badge badge-danger "> <i class="fa fa-trash-alt text-white"></i> </a></td>
+												</tr>
+												</tbody>
+											<!--end::Table body-->
+										</table>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+											<div class="dataTables_length" id="kt_customers_table_length">
+												<label>
+													<select name="kt_customers_table_length" aria-controls="kt_customers_table" class="form-select form-select-sm form-select-solid">
+														<option value="10">10</option>
+														<option value="25">25</option>
+														<option value="50">50</option>
+														<option value="100">100</option>
+													</select>
+												</label>
+											</div>
+										</div>
+										<div class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end">
+											<div class="dataTables_paginate paging_simple_numbers" id="kt_customers_table_paginate">
+												<ul class="pagination">
+													<li class="paginate_button page-item previous disabled" id="kt_customers_table_previous">
+														<a href="#" aria-controls="kt_customers_table" data-dt-idx="0" tabindex="0" class="page-link">
+															<i class="previous"></i>
+														</a>
+													</li>
+													<li class="paginate_button page-item active">
+														<a href="#" aria-controls="kt_customers_table" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+													</li>
+													
+													<li class="paginate_button page-item next" id="kt_customers_table_next">
+														<a href="#" aria-controls="kt_customers_table" data-dt-idx="5" tabindex="0" class="page-link">
+															<i class="next"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+										<!--end::Table-->
 									</div>
 									<!--end::Card body-->
 								</div>
 								<!--end::Card-->
+										</div>
+								<div class="mb-19">
+									<!--begin::Top-->
+									<div class="text-center mb-12">
+										<!--begin::Title-->
+										<h3 class="fs-2hx text-dark mb-5">Signature</h3>
+										<!--end::Title-->
+								
+										 
+									</div>  
+									<!--end::Top-->   
+								
+									<!--begin::Row-->
+									<div class="row g-10"> 
+										  
+								
+										<!--begin::Col-->  
+										<div class="col-md-3">           
+											<!--begin::Publications post-->
+												<div class="card mx-md-3">    
+													<!--begin::Overlay-->
+													<div class="d-block  text-center"  >       
+														<!--begin::Image-->
+														<img src="../../assets/media/avatars/150-26.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="">                   
+
+														
+													</div>  
+													<!--end::Overlay-->   
+												
+													<!--begin::Body-->
+													<div class="card-body text-center m-0">    
+														<!--begin::Title-->
+														<a href="../user-profile/overview.html" class="fs-4 text-dark fw-bold text-hover-primary text-dark lh-base">
+															Cris Morgan    </a>       
+														<!--end::Title-->
+												
+														
+												
+														<!--begin::Content-->
+														<div class="fs-6 fw-bold">
+															<!--begin::Author-->
+															<!--end::Author-->
+												
+															<!--begin::Date-->
+															<span class="text-muted">on Apr 14 2021</span>     
+															<!--end::Date-->              
+														</div>
+														<!--end::Content-->      
+													</div>
+													<!--end::Body-->                      
+												</div>
+												<!--end::Publications post-->
+								
+								 
+								
+										 </div>   
+										<!--end::Col-->   
+								<!--begin::Col-->  
+								<div class="col-md-3">           
+									<!--begin::Publications post-->
+										<div class="card mx-md-3">    
+											<!--begin::Overlay-->
+											<div class="d-block  text-center"  >       
+												<!--begin::Image-->
+												<img src="../../assets/media/avatars/150-26.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="">                   
+
+												
+											</div>  
+											<!--end::Overlay-->   
+										
+											<!--begin::Body-->
+											<div class="card-body text-center m-0">    
+												<!--begin::Title-->
+												<a href="../user-profile/overview.html" class="fs-4 text-dark fw-bold text-hover-primary text-dark lh-base">
+													Cris Morgan    </a>       
+												<!--end::Title-->
+										
+												
+										
+												<!--begin::Content-->
+												<div class="fs-6 fw-bold">
+													<!--begin::Author-->
+													<!--end::Author-->
+										
+													<!--begin::Date-->
+													<span class="text-muted">on Apr 14 2021</span>     
+													<!--end::Date-->              
+												</div>
+												<!--end::Content-->      
+											</div>
+											<!--end::Body-->                      
+										</div>
+										<!--end::Publications post-->
+						
+						 
+						
+								 </div>   
+								<!--end::Col--> 
+								<!--begin::Col-->  
+								<div class="col-md-3">           
+									<!--begin::Publications post-->
+										<div class="card mx-md-3">    
+											<!--begin::Overlay-->
+											<div class="d-block  text-center"  >       
+												<!--begin::Image-->
+												<img src="../../assets/media/avatars/150-26.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="">                   
+
+												
+											</div>  
+											<!--end::Overlay-->   
+										
+											<!--begin::Body-->
+											<div class="card-body text-center m-0">    
+												<!--begin::Title-->
+												<a href="../user-profile/overview.html" class="fs-4 text-dark fw-bold text-hover-primary text-dark lh-base">
+													Cris Morgan    </a>       
+												<!--end::Title-->
+										
+												
+										
+												<!--begin::Content-->
+												<div class="fs-6 fw-bold">
+													<!--begin::Author-->
+													<!--end::Author-->
+										
+													<!--begin::Date-->
+													<span class="text-muted">on Apr 14 2021</span>     
+													<!--end::Date-->              
+												</div>
+												<!--end::Content-->      
+											</div>
+											<!--end::Body-->                      
+										</div>
+										<!--end::Publications post-->
+						
+						 
+						
+								 </div>   
+								<!--end::Col--> 
+								<!--begin::Col-->  
+								<div class="col-md-3">           
+									<!--begin::Publications post-->
+										<div class="card mx-md-3">    
+											<!--begin::Overlay-->
+											<div class="d-block  text-center"  >       
+												<!--begin::Image-->
+												<img src="../../assets/media/avatars/150-26.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="">                   
+
+												
+											</div>  
+											<!--end::Overlay-->   
+										
+											<!--begin::Body-->
+											<div class="card-body text-center m-0">    
+												<!--begin::Title-->
+												<a href="../user-profile/overview.html" class="fs-4 text-dark fw-bold text-hover-primary text-dark lh-base">
+													Cris Morgan    </a>       
+												<!--end::Title-->
+										
+												
+										
+												<!--begin::Content-->
+												<div class="fs-6 fw-bold">
+													<!--begin::Author-->
+													<!--end::Author-->
+										
+													<!--begin::Date-->
+													<span class="text-muted">on Apr 14 2021</span>     
+													<!--end::Date-->              
+												</div>
+												<!--end::Content-->      
+											</div>
+											<!--end::Body-->                      
+										</div>
+										<!--end::Publications post-->
+						
+						 
+						
+								 </div>   
+								<!--end::Col--> 
+										     
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Section-->
+										   
+										
+								      
+									</div>
+									<!--end::Body-->
+								</div>
 								
 							</div>
 							<!--end::Container-->
@@ -1182,6 +1562,11 @@ License: For each use you must have a valid license purchased only from above li
 				});
 			
 			});
+		</script>
+		<script>
+			$(".js-programmatic-disable").on("click", function () {
+  $(".js-example-disabled").prop("disabled", true);
+ });
 		</script>
 		<!--end::Javascript-->
 	</body>
